@@ -20,5 +20,5 @@ function getData(url) {
 
 getData('./data.json')
   .then(data=>{
-    console.log(data);
+    // console.log(data);
   });
