@@ -12,13 +12,13 @@ function getData(url) {
     .catch(e => {
       return fetch(url).then(res=>res.json()); // returns a promise
     })
-    .then(v => {
-      sessionStorage[url] = JSON.stringify(v); // set cache
-      return Promise.resolve(v); // returns a promise
+    .then(data => {
+      sessionStorage[url] = JSON.stringify(data); // set cache
+      return Promise.resolve(data); // returns a promise
     });
 }
 
 getData('./data.json')
   .then(data=>{
-
+    console.log(data);
   });
