@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ES Modules</title>
+  </head>
+  <body>
+    <h1>New ES Features</h1>
+    <h2>Modules</h2>
+    <ul>
+      <li><a href="/destructuring">Destructuring</a></li>
+      <li><a href="/classes">Classes</a></li>
+      <li><a href="/modules">Modules</a></li>
+    </ul>
+
+    <script type="module">
+      import Dog from './Dog.js';
+
+      const frank = new Dog('Frank', 3);
+      const bart = new Dog('Bart');
+    </script>
+  </body>
+</html>
