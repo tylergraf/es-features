@@ -6,7 +6,6 @@ function resolveAfter2Seconds(x) {
   });
 }
 
-
 async function add1(x) {
   const a = await resolveAfter2Seconds(20);
   const b = await resolveAfter2Seconds(30);
@@ -20,9 +19,11 @@ async function add2(x) {
 }
 
 add1(10).then(v => {
-  console.log(v);  // prints 60 after 4 seconds.
+  debugger;
+  console.log(v); // v = 60 after how long?
 });
 
-add2(10).then(v => {
-  console.log(v);  // prints 60 after 2 seconds.
-});
+// add2(10).then(v => {
+//   debugger;
+//   console.log(v); // v = 60 after how long?
+// });
