@@ -1,4 +1,4 @@
-class Animal {
+const Animal = class {
   constructor(name, type, legs) {
     this.name = name;
     this.legs = legs;
@@ -11,5 +11,3 @@ class Animal {
     console.log(`${this.name} says hey.`);
   }
 }
-
-export default Animal;

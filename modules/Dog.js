@@ -1,6 +1,4 @@
-import Animal from './Animal.js';
-
-class Dog extends Animal {
+const Dog = class extends Animal {
   constructor(name, legs = 4){
     super(name, 'dog', legs);
   }
@@ -10,5 +8,3 @@ class Dog extends Animal {
     console.log(`${this.name} barks hey.`);
   }
 }
-
-export default Dog;
