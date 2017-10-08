@@ -14,7 +14,7 @@ function getData(url) {
     })
     .then(data => {
       sessionStorage[url] = JSON.stringify(data); // set cache
-      return Promise.resolve(data); // returns a promise
+      return data;
     });
 }
 
